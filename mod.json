@@ -1,0 +1,63 @@
+{
+	"geode": "4.0.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "user.extravehicles",
+	"name": "Extra Vehicles",
+	"version": "v1.0.0",
+	"developer": "user",
+	"description": "Pelota Rebote, Serpiente, portales de velocidad nuevos (x0.2 a x7) y triggers mas faciles.",
+	"resources": {
+		"spritesheets": {
+			"PortalSheet": ["resources/portals/*.png"]
+		}
+	},
+	"settings": {
+		"auto-group": {
+			"type": "bool",
+			"default": true,
+			"name": "Grupo automatico en triggers",
+			"description": "Al colocar un trigger sin grupo, le pone el siguiente numero de grupo disponible."
+		},
+		"play-sounds": {
+			"type": "bool",
+			"default": true,
+			"name": "Sonidos de portales",
+			"description": "Suena un efecto al pasar por los portales nuevos."
+		},
+		"rainbow-trail": {
+			"type": "bool",
+			"default": true,
+			"name": "Cola arcoiris en la Serpiente",
+			"description": "La cola de la Serpiente cambia de color."
+		},
+		"bounce-low": {
+			"type": "float",
+			"default": 7.0,
+			"min": 2.0,
+			"max": 20.0,
+			"name": "Rebote bajo",
+			"description": "Fuerza del rebote de la Pelota sin mantener el toque."
+		},
+		"bounce-high": {
+			"type": "float",
+			"default": 13.0,
+			"min": 2.0,
+			"max": 25.0,
+			"name": "Rebote alto",
+			"description": "Fuerza del rebote de la Pelota manteniendo el toque."
+		},
+		"snake-speed": {
+			"type": "float",
+			"default": 8.0,
+			"min": 2.0,
+			"max": 20.0,
+			"name": "Velocidad vertical de la Serpiente",
+			"description": "Que tan rapido sube o baja en diagonal."
+		}
+	}
+}
